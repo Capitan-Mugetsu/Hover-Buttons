@@ -1,0 +1,25 @@
+{
+  "name": "media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Capitan-Mugetsu/Hover-Buttons.git"
+  },
+  "keywords": [
+    "cap"
+  ],
+  "author": "lord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Capitan-Mugetsu/Hover-Buttons/issues"
+  },
+  "homepage": "https://github.com/Capitan-Mugetsu/Hover-Buttons#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

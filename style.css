@@ -1,32 +1,52 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; }
 
 body {
-    background: violet;
-}
+  background: violet; }
 
 .buttons {
-    text-align: center;
-    padding-top: 20%;
-}
+  text-align: center;
+  padding-top: 20%; }
 
 .btn {
-    padding: 15px 25px;
-    margin-right: 100px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-}
+  margin-right: 100px;
+  border-radius: 100px;
+  border: none;
+  outline: none; }
+
+.color-btn {
+  background-image: linear-gradient(to right, red, green, blue);
+  animation-name: colorChange;
+  animation-timing-function: linear;
+  animation-duration: .2s;
+  animation-iteration-count: 500;
+  padding: 15px 40px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+  transition: background-image 4s;
+  opacity: background-image .5; }
+
+@keyframes colorChange {
+  0% {
+    background-image: linear-gradient(to right, red, yellow, green); }
+  50% {
+    background-image: linear-gradient(to right, green, red, yellow); }
+  100% {
+    background-image: linear-gradient(to right, yellow, green, red); } }
 
 .deg-btn {
-    cursor: pointer;
-    background: grey;
-    transition: .5s; 
-}
+  cursor: pointer;
+  background: grey;
+  transition: .5s;
+  animation-duration: .5s;
+  animation-name: moveto360deg;
+  animation-iteration-count: 30;
+  animation-timing-function: linear;
+  padding: 32px 20px; }
 
-.deg-btn:hover  {
-    transform: rotate(360deg);
-}
+@keyframes moveto360deg {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(-360deg); } }
