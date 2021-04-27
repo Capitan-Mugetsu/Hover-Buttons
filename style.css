@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: violet;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 20%;
+}
+
+.btn {
+    padding: 15px 25px;
+    margin-right: 100px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.deg-btn {
+    cursor: pointer;
+    background: grey;
+    transition: .5s; 
+}
+
+.deg-btn:hover  {
+    transform: rotate(360deg);
+}
